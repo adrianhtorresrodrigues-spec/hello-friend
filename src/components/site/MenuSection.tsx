@@ -3,8 +3,8 @@ import { menu } from "@/config/site";
 import { Reveal, SafeImg } from "./Reveal";
 
 export function MenuSection() {
-  const [active, setActive] = useState(menu[0].id);
-  const cat = menu.find((c) => c.id === active) ?? menu[0];
+  const [active, setActive] = useState(menu[0]!.id);
+  const cat = menu.find((c) => c.id === active) ?? menu[0]!;
 
   return (
     <section id="cardapio" className="bg-cream px-5 py-20 sm:px-8 sm:py-28">

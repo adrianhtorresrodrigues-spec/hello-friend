@@ -22,7 +22,7 @@ function Index() {
   return (
     <>
       <Header />
-      <main>
+      <main className="overflow-x-clip">
         <Hero />
         <Marquee />
         <StoryBand />

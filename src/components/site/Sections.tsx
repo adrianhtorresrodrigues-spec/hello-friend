@@ -63,7 +63,7 @@ export function Marquee() {
   const words = ["Burger culture", "Sabor em destaque", "Feito para impressionar", "Street food design"];
   const row = [...words, ...words];
   return (
-    <div className="relative -rotate-2 bg-ketchup py-4 sm:py-5" aria-label={words.join(" · ")}>
+    <div className="overflow-hidden py-4"><div className="relative -mx-4 -rotate-2 overflow-hidden bg-ketchup py-4 sm:py-5" aria-label={words.join(" · ")}>
       <div className="flex w-max animate-marquee" aria-hidden>
         {[0, 1].map((k) => (
           <div key={k} className="flex shrink-0 items-center">
@@ -75,7 +75,7 @@ export function Marquee() {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 }
 
