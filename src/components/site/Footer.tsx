@@ -2,7 +2,7 @@ import { Instagram, MapPin, MessageCircle, Clock } from "lucide-react";
 import { site } from "@/config/site";
 import { Wave } from "./Sections";
 
-function Field({ icon: Icon, label, value, href }: { icon: typeof MapPin; label: string; value: string; href?: string }) {
+function Field({ icon: Icon, label, value, href }: { icon: typeof MapPin; label: string; value: string; href?: string | undefined }) {
   const content = value || `[${label} a configurar]`;
   return (
     <li className="flex items-start gap-3">
